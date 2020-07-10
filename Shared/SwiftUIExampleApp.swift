@@ -11,7 +11,8 @@ import SwiftUI
 struct SwiftUIExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RideHistoryList(rides: testRides)
+                .environmentObject(UserData())
         }
     }
 }
